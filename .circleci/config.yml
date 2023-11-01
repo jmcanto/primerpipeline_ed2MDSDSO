@@ -15,7 +15,8 @@ jobs:
           name: install dependencies
           command: |
             python3 -m venv venv
-            source venv/bin/activate
+            python3 -m pip install --upgrade pip
+            source venv/bin/activate            
             pip install importlib_metadata --upgrade
             pip install -r requirements.txt
       # Step 3: ejecutamos linters y flake8 y lanzamos casos de prueba
