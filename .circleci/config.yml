@@ -19,6 +19,7 @@ jobs:
             pip install importlib_metadata --upgrade
             ~/repo/venv/bin/python3 -m pip install --upgrade pip
             pip install -r requirements.txt
+            pip install --upgrade flake8
       # Step 3: ejecutamos linters y flake8 y lanzamos casos de prueba
       - run:
           name: run tests
